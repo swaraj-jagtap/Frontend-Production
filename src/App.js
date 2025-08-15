@@ -10,7 +10,7 @@ import GenericEntityPage from './pages/GenericEntityPage';
 import LoginPage from './pages/LoginPage';
 
 // ✅ Use full backend URL since backend runs on 5001
-const API_URL = process.env.BACKEND_API_URL;
+const API_URL = process.env.BACKEND_API_URL|| "https://backend-production-mvi3.onrender.com/api";
 
 export default function App() {
     const [user, setUser] = useState(null);
